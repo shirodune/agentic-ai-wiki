@@ -11,8 +11,8 @@ configuration:
   # No third-party analytics for a provenance-first, privacy-conscious wiki.
   analytics: null
   locale: en-US
-  # GitHub Pages project-site hostname. Replace when a custom domain is approved.
-  baseUrl: shirodune.github.io/agentic-ai
+  # Public custom hostname managed in Cloudflare DNS.
+  baseUrl: agentic-ai-wiki.deploy-agent.dev
   ignorePatterns:
     - _meta
     - private
