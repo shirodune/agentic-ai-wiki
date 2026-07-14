@@ -6,6 +6,7 @@ sources:
   - raw/anthropic-building-effective-agents.md
   - raw/openai-practical-guide-building-agents.md
   - raw/react-synergizing-reasoning-and-acting.md
+  - raw/google-new-sdlc-vibe-coding.md
 updated: 2026-07-14
 publish: true
 ---
@@ -34,6 +35,12 @@ OpenAI explicitly groups the foundations as model, tools, and instructions. Anth
 
 [[concepts/react|ReAct]] is a research pattern that makes the reasoning–action–observation cycle explicit by interleaving task reasoning with actions and environmental observations. [[raw/react-synergizing-reasoning-and-acting|ReAct source record]]
 
+## Harness and deployment
+
+The model loop operates inside an [[concepts/agent-harnesses|agent harness]] that assembles context, dispatches tools, maintains state, enforces controls, evaluates progress, and exposes operational traces. The New SDLC whitepaper adds deployment and production infrastructure to the conceptual agent stack. [[raw/google-new-sdlc-vibe-coding|New SDLC source record]] (pp. 10–30)
+
+**Analysis:** This means an agent should be identified by more than its model and prompt. Tool versions, permissions, memory, orchestration, evaluators, and deployment configuration can materially change its behavior.
+
 ## When agents fit
 
 Agents are most plausible when the path cannot be specified reliably in advance: the task involves ambiguous judgment, changing context, unstructured information, or an unpredictable number of steps. Fixed automation or a single augmented model call remains preferable when it can meet the requirement more cheaply and predictably. [[raw/openai-practical-guide-building-agents|OpenAI source record]] · [[raw/anthropic-building-effective-agents|Anthropic source record]]
@@ -46,11 +53,13 @@ Autonomy can improve flexibility while increasing latency, cost, and the chance 
 
 ## Evidence status
 
-The architecture and deployment advice here is supported by two vendor engineering guides that report practical experience but not systematic comparative studies. ReAct contributes benchmark evidence for one reasoning-and-acting format, but its results are specific to the paper's tasks and baselines. Confidence is **medium** for broad design recommendations and should be raised only with application-specific evaluations or independent studies.
+The architecture and deployment advice here is supported by vendor engineering guides and a Google course whitepaper that report practical experience but not systematic comparative studies. ReAct contributes benchmark evidence for one reasoning-and-acting format, but its results are specific to the paper's tasks and baselines. Confidence is **medium** for broad design recommendations and should be raised only with application-specific [[concepts/agent-evaluation|evaluations]] or independent studies.
 
 ## Related
 
 - [[concepts/agent-orchestration|Agent orchestration]]
 - [[concepts/agent-tools|Agent tools]]
+- [[concepts/agent-harnesses|Agent harnesses]]
+- [[concepts/agent-evaluation|Agent evaluation]]
 - [[concepts/agent-safety-and-control|Agent safety and control]]
 - [[concepts/react|ReAct]]

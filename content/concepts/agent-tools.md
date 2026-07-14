@@ -6,6 +6,8 @@ sources:
   - raw/anthropic-building-effective-agents.md
   - raw/openai-practical-guide-building-agents.md
   - raw/react-synergizing-reasoning-and-acting.md
+  - raw/google-agent-tools-interoperability.md
+  - raw/google-agent-skills.md
 updated: 2026-07-14
 publish: true
 ---
@@ -25,6 +27,12 @@ OpenAI groups tools into three functional types. [[raw/openai-practical-guide-bu
 Anthropic places retrieval, tools, and memory around an augmented language model and emphasizes that the model must receive environmental results as ground truth during execution. [[raw/anthropic-building-effective-agents|Anthropic source record]]
 
 In [[concepts/react|ReAct]], actions alternate with observations so that new evidence can update the next reasoning step. [[raw/react-synergizing-reasoning-and-acting|ReAct source record]]
+
+## Tools, protocols, and skills
+
+A tool exposes a capability; an interoperability protocol standardizes how that capability is discovered or invoked; an [[concepts/agent-skills|agent skill]] packages procedural guidance for deciding how to perform recurring work. These layers can be combined but should not be conflated. [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 6–17) · [[raw/google-agent-skills|Agent Skills source record]] (pp. 11–14)
+
+[[concepts/agent-interoperability|MCP]] can reduce bespoke model-to-tool connector code, while A2A addresses stateful coordination among agents. Neither protocol removes the need for clear semantics, scoped credentials, validation, and observability. [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 10–31)
 
 ## Interface quality
 
@@ -57,11 +65,14 @@ This checklist is synthesis, not a verbatim framework from either source.
 
 ## Evidence status
 
-The interface recommendations are consistent across two vendor guides and conceptually supported by ReAct's use of observations. Confidence is **medium** because reliability still depends on model, task, and implementation-specific testing.
+The interface recommendations are consistent across several vendor guides and conceptually supported by ReAct's use of observations. Confidence is **medium** because reliability still depends on model, task, protocol implementation, and [[concepts/agent-evaluation|deployment-specific testing]].
 
 ## Related
 
 - [[concepts/ai-agents|AI agents]]
 - [[concepts/agent-orchestration|Agent orchestration]]
+- [[concepts/agent-interoperability|Agent interoperability]]
+- [[concepts/agent-skills|Agent skills]]
+- [[concepts/agent-harnesses|Agent harnesses]]
 - [[concepts/agent-safety-and-control|Agent safety and control]]
 - [[concepts/react|ReAct]]
