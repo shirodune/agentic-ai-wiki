@@ -1,16 +1,28 @@
 # Agentic AI Wiki
 
-This repository separates two responsibilities:
+A hands-on Agentic AI LLM Wiki practice project built with
+[Quartz](https://quartz.jzhao.xyz/) and maintained using Hermes Agent's
+`llm-wiki` skill.
 
-- Wiki maintenance: research, provenance, synthesis, and pages under `content/`.
-- Publishing infrastructure: Quartz, verification, CI, and deployment.
+**Live wiki:** <https://agentic-ai-wiki.deploy-agent.dev/>
 
-See `AGENTS.md` for agent ownership boundaries and publication rules.
+The project practices provenance-first research: preserving source records,
+separating evidence from inference, recording contradictions, and publishing
+only explicitly approved pages.
 
-## Status
+## How it is maintained
 
-Quartz v5 publishing infrastructure is installed. Wiki research and substantive
-content belong to the separate wiki-maintenance session.
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) and its
+  `llm-wiki` skill guide source evaluation, provenance, synthesis, and wiki
+  consistency.
+- Quartz turns the interlinked Markdown knowledge base under `content/` into a
+  searchable static website.
+- Automated checks ensure that only a genuine YAML Boolean `publish: true` can
+  make a page public.
+
+The repository separates wiki maintenance under `content/` from publishing
+infrastructure such as Quartz, verification, CI, and deployment. See
+`AGENTS.md` for ownership boundaries and publication rules.
 
 ## Commands
 
@@ -28,5 +40,3 @@ Only a genuine YAML Boolean `publish: true` is public. Quoted strings are privat
 Non-Markdown assets are currently forbidden under `content/` because Quartz can
 emit assets independently of page filters; request an infrastructure change if
 public image or document support is needed later.
-
-No Git remote or deployment hostname is configured yet.
