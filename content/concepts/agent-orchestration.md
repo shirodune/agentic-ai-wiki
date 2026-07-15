@@ -5,6 +5,7 @@ tags: [agents, orchestration, architecture, evaluation]
 sources:
   - raw/anthropic-building-effective-agents.md
   - raw/openai-practical-guide-building-agents.md
+  - raw/google-announcing-agent2agent-protocol.md
   - raw/google-agent-tools-interoperability.md
   - raw/google-agent-skills.md
 updated: 2026-07-14
@@ -58,6 +59,8 @@ Anthropic's orchestrator–worker workflow resembles the manager pattern because
 ## Interoperable and composed execution
 
 The tools and interoperability whitepaper distinguishes invoking a bounded tool from coordinating a specialist agent that may require clarification, long-running state, cancellation, or negotiation. It presents A2A as a protocol layer for the latter case. [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 17–31) · [[concepts/agent-interoperability|Agent interoperability]]
+
+The A2A launch announcement corroborates this distinction through Agent Cards, task lifecycle, status, messages, and artifacts. These protocol objects expose orchestration state but do not decide delegation policy or final responsibility. [[raw/google-announcing-agent2agent-protocol|Google A2A announcement]] · [[concepts/agent2agent-protocol|Agent2Agent Protocol]]
 
 The Agent Skills whitepaper recommends explicit dependency structures such as directed acyclic graphs when several [[concepts/agent-skills|skills]] compose a workflow. This can make dependencies and failure propagation more inspectable than informal chains of model-selected steps. [[raw/google-agent-skills|Agent Skills source record]] (pp. 36–41)
 

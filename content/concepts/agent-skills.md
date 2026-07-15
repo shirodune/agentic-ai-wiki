@@ -5,6 +5,7 @@ tags: [agents, skills, memory, tools, evaluation]
 sources:
   - raw/google-agent-skills.md
   - raw/google-agent-tools-interoperability.md
+  - raw/karpathy-llm-wiki.md
 updated: 2026-07-14
 publish: true
 ---
@@ -53,6 +54,10 @@ The whitepaper recommends explicit composition structures such as directed acycl
 ## Meta-skills
 
 Meta-skills can propose, generate, or revise other skills from successful trajectories. The source warns that self-improvement is only as sound as its evaluation objective and governance. An agent may optimize a weak proxy or introduce unsafe instructions if changes are accepted automatically. [[raw/google-agent-skills|Agent Skills source record]] (pp. 32–35)
+
+## Knowledge-maintenance procedures
+
+Karpathy's [[concepts/llm-wiki-pattern|LLM Wiki pattern]] uses a schema to encode recurring ingest, query, and lint behavior. **Analysis:** A host can implement this as project instructions, an always-loaded schema, or an on-demand skill. Packaging changes loading and portability, but not the need for source approval, provenance, tests, and human review. [[raw/karpathy-llm-wiki|Karpathy LLM Wiki source record]]
 
 ## Evidence status
 

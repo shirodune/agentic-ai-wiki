@@ -80,3 +80,32 @@ updated: 2026-07-14
 - Marked `index.md`, all 11 concept pages, and all eight source records public.
 - Kept `SCHEMA.md` and `log.md` private.
 - Commit scope remains restricted to `content/`; infrastructure is unchanged.
+
+## 2026-07-14 — Ingested four approved protocol and knowledge-format sources
+
+- Added `link-summary-only` source records for Anthropic's MCP launch, Google's A2A launch, Andrej Karpathy's LLM Wiki design note, and Google Cloud's OKF announcement.
+- Created concepts for Model Context Protocol, Agent2Agent Protocol, LLM Wiki Pattern, and Open Knowledge Format.
+- Created comparisons for MCP versus A2A and the LLM Wiki pattern versus OKF.
+- Updated agent interoperability, tools, orchestration, skills, and harnesses with source-linked synthesis.
+- Preserved source limits: historical launch announcements are not current specifications; OKF v0.1 portability is not independently established; and the LLM Wiki note is a conceptual workflow rather than a controlled evaluation.
+- Recorded the OKF article's June 12 metadata versus June 13 rendered-date discrepancy and avoided claiming this repository is OKF-conformant.
+- Files created:
+  - `raw/anthropic-introducing-model-context-protocol.md`
+  - `raw/google-announcing-agent2agent-protocol.md`
+  - `raw/karpathy-llm-wiki.md`
+  - `raw/google-open-knowledge-format.md`
+  - `concepts/model-context-protocol.md`
+  - `concepts/agent2agent-protocol.md`
+  - `concepts/llm-wiki-pattern.md`
+  - `concepts/open-knowledge-format.md`
+  - `comparisons/mcp-vs-a2a.md`
+  - `comparisons/llm-wiki-vs-okf.md`
+- Files updated: `concepts/agent-interoperability.md`, `concepts/agent-tools.md`, `concepts/agent-orchestration.md`, `concepts/agent-skills.md`, `concepts/agent-harnesses.md`, `index.md`, and `log.md`.
+- No substantial source bodies were copied. All wiki pages are staged as `publish: false` pending explicit publication approval; no commit or push was performed.
+
+## 2026-07-14 — Protocol and knowledge-format collection approved for publication and push
+
+- User explicitly approved publishing the complete wiki revision, committing it, and pushing it to `origin/main`.
+- Marked `index.md`, all 15 concepts, both comparisons, and all 12 source records `publish: true`.
+- Kept `SCHEMA.md` and `log.md` private.
+- Commit scope remains restricted to `content/`; infrastructure is unchanged.

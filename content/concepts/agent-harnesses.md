@@ -8,6 +8,8 @@ sources:
   - raw/google-new-sdlc-vibe-coding.md
   - raw/google-vibe-coding-agent-security-evaluation.md
   - raw/google-spec-driven-production-development.md
+  - raw/karpathy-llm-wiki.md
+  - raw/google-open-knowledge-format.md
 updated: 2026-07-14
 publish: true
 ---
@@ -40,6 +42,10 @@ This extends [[concepts/agent-safety-and-control|agent safety and control]] from
 ## Harness versus framework
 
 A framework is an implementation library; a harness is an architectural role. A harness can be built directly or through one or more frameworks. Anthropic cautions that framework abstractions can obscure prompts, responses, and control flow, so teams should retain visibility into the actual harness behavior. [[raw/anthropic-building-effective-agents|Anthropic source record]]
+
+## Knowledge substrate
+
+An agent harness may consume a maintained [[concepts/llm-wiki-pattern|LLM Wiki]] or a portable [[concepts/open-knowledge-format|OKF]] bundle as context. The knowledge representation does not decide retrieval, trust, permissions, or context priority; those remain harness responsibilities. [[raw/karpathy-llm-wiki|Karpathy LLM Wiki source record]] · [[raw/google-open-knowledge-format|OKF source record]]
 
 ## Verification boundary
 

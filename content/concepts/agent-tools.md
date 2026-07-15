@@ -6,6 +6,7 @@ sources:
   - raw/anthropic-building-effective-agents.md
   - raw/openai-practical-guide-building-agents.md
   - raw/react-synergizing-reasoning-and-acting.md
+  - raw/anthropic-introducing-model-context-protocol.md
   - raw/google-agent-tools-interoperability.md
   - raw/google-agent-skills.md
 updated: 2026-07-14
@@ -32,7 +33,7 @@ In [[concepts/react|ReAct]], actions alternate with observations so that new evi
 
 A tool exposes a capability; an interoperability protocol standardizes how that capability is discovered or invoked; an [[concepts/agent-skills|agent skill]] packages procedural guidance for deciding how to perform recurring work. These layers can be combined but should not be conflated. [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 6–17) · [[raw/google-agent-skills|Agent Skills source record]] (pp. 11–14)
 
-[[concepts/agent-interoperability|MCP]] can reduce bespoke model-to-tool connector code, while A2A addresses stateful coordination among agents. Neither protocol removes the need for clear semantics, scoped credentials, validation, and observability. [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 10–31)
+[[concepts/model-context-protocol|MCP]] can reduce repeated model-to-tool connector code, while [[concepts/agent2agent-protocol|A2A]] addresses stateful coordination among agents. Anthropic's launch source supports the original client–server motivation; neither protocol removes the need for clear semantics, scoped credentials, validation, and observability. [[raw/anthropic-introducing-model-context-protocol|Anthropic MCP announcement]] · [[raw/google-agent-tools-interoperability|Tools and interoperability source record]] (pp. 10–31)
 
 ## Interface quality
 
